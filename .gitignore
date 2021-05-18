@@ -1,5 +1,6 @@
-miniapp/taro
-taro-project/dist
-**/node_modules
-**/yarn.lock
-**/package-lock.json
+dist/
+deploy_versions/
+.temp/
+.rn_temp/
+node_modules/
+.DS_Store
