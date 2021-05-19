@@ -1,13 +1,12 @@
-import React from 'react'
-import { View } from '@tarojs/components'
-import './app.scss'
-// import 'taro-ui/dist/style' 
+import React from "react";
+import { View } from "@tarojs/components";
+import "./app.scss";
 
 interface IAppProps {}
 
 const App: React.FC<IAppProps> = (props) => {
-    return props.children
-}
+  return <>{props.children}</>;
+};
 
 // export default App
 // import { Component } from 'react'
@@ -34,4 +33,4 @@ const App: React.FC<IAppProps> = (props) => {
 //   }
 // }
 
-export default App
+export default App;
