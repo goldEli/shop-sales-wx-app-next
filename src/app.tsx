@@ -1,6 +1,7 @@
 import React from 'react'
 import { View } from '@tarojs/components'
 import './app.scss'
+// import 'taro-ui/dist/style' 
 
 interface IAppProps {}
 

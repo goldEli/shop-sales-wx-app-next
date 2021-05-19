@@ -19,6 +19,7 @@ const config = {
   },
   framework: "react",
   alias: {
+    "src": path.resolve(__dirname, "../src"),
     "@/utils":
       process.env.NODE_ENV === "production"
         ? path.resolve(__dirname, "../utils")
@@ -103,6 +104,7 @@ const config = {
     },
   },
   h5: {
+    esnextModules: ["taro-ui"],
     publicPath: "/",
     staticDirectory: "static",
     addChunkPages(pages) {
