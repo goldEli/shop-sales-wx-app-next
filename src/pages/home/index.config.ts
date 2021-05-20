@@ -1,6 +1,4 @@
 export default {
-  navigationBarTitleText: '首页',
-  usingComponents: {
-    // title: '@/components/title/index'
-  }
-}
+  navigationBarTitleText: "首页",
+  navigationBarBackgroundColor: "#4482F1"
+};

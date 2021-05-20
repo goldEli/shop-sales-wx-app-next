@@ -21,7 +21,9 @@ const externalPackages = [
 export default {
   input: [
     resolveFile("./src/pages/home/index.tsx"),
-    resolveFile("./src/pages/index/index.tsx")
+    resolveFile("./src/pages/home/index.config.ts"),
+    resolveFile("./src/pages/index/index.tsx"),
+    resolveFile("./src/pages/index/index.config.ts"),
   ],
   output: {
     dir: "dist",
