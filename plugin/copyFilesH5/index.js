@@ -1,5 +1,6 @@
 const fs = require("fs-extra");
 const path = require("path");
+const utils = require("../utils");
 
 const copyFilesH5 = (options = {}) => {
   const { hook = "buildEnd" } = options;
@@ -7,16 +8,8 @@ const copyFilesH5 = (options = {}) => {
     name: "copy-file",
     [hook]: async () => {
       console.log("taro代码打包完成！");
-     
-      const rootPath = path.resolve(__dirname, "../..");
-      const miniappPath = path.join(rootPath, "src");
-      const outputPath = path.resolve(__dirname, "../dist");
-      const destPath = path.join(miniappPath, "taro");
+      utils.handleCopy();
 
-      if (fs.existsSync(destPath)) {
-        fs.removeSync(destPath);
-      }
-      fs.copySync(outputPath, destPath);
       console.log("代码拷贝完成！");
     },
   };
