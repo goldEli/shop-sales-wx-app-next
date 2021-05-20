@@ -10,8 +10,8 @@ interface IHomeProps {}
 const Home: React.FC<IHomeProps> = (props) => {
   return (
     <View>
-      <AtButton type="primary">123</AtButton>
-      <Title text="123" />
+      <AtButton type="primary">this is home page</AtButton>
+      <Title text="title" />
     </View>
   );
 };
