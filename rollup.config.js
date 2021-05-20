@@ -8,34 +8,32 @@ import multiInput from "rollup-plugin-multi-input";
 import copyFilesH5 from "./plugin/copyFilesH5/index";
 // const mv = require("./plugin-mv-h5");
 
-const resolveFile = (path) => NodePath.resolve(__dirname, path);
+const resolveFile = path => NodePath.resolve(__dirname, path);
 const externalPackages = [
   "react",
   "react-dom",
   "@tarojs/components",
   "@tarojs/runtime",
   "@tarojs/taro",
-  "@tarojs/react",
+  "@tarojs/react"
 ];
 
 export default {
   input: [
     resolveFile("./src/pages/home/index.tsx"),
-    resolveFile("./src/pages/index/index.tsx"),
+    resolveFile("./src/pages/index/index.tsx")
   ],
   output: {
     dir: "dist",
     format: "esm",
-    sourcemap: true,
+    sourcemap: true
   },
   //   external: externalPackages,
   plugins: [
     multiInput(),
-    copyFilesH5({
-      targets: [{ src: "./index.html", dest: "dist" }],
-    }),
+
     scss({
-      output: "dist/bundle.css",
+      output: "dist/bundle.css"
     }),
     // RollupCommonjs({
     //   include: /\/node_modules\//,
@@ -44,7 +42,8 @@ export default {
     // nodeResolve(),
     RollupTypescript({
       tsconfig: resolveFile("./tsconfig.json"),
-      check: false,
+      check: false
     }),
-  ],
+    copyFilesH5()
+  ]
 };

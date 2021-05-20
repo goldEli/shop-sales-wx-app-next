@@ -1,6 +1,5 @@
-const fs = require("fs-extra");
-const path = require("path");
-const utils = require("../utils");
+import * as fs from "fs-extra";
+import * as path from "path";
 
 export default (ctx, options) => {
   ctx.onBuildFinish(() => {
@@ -10,7 +9,16 @@ export default (ctx, options) => {
     if (blended) {
       console.log("taro代码转编小程序代码完成！");
 
-      utils.handleCopy();
+      const rootPath = path.resolve(__dirname, "../../../");
+      const miniappPath = path.join(rootPath, "src");
+      const outputPath = path.resolve(__dirname, "../../dist");
+      const destPath = path.join(miniappPath, "taro");
+      console.log("destPath", destPath);
+      console.log("outputPath", outputPath);
+      if (fs.existsSync(destPath)) {
+        fs.removeSync(destPath);
+      }
+      fs.copySync(outputPath, destPath);
 
       console.log("代码拷贝完成！");
       return;
