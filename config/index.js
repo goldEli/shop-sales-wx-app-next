@@ -11,7 +11,7 @@ const config = {
   },
   sourceRoot: "src",
   outputRoot: "dist",
-  plugins: [path.join(process.cwd(), "/plugin-mv/index.js")],
+  plugins: [path.join(process.cwd(), "./plugin/copyFiles")],
   defineConstants: {},
   copy: {
     patterns: [],
