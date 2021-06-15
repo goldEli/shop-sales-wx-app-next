@@ -48,6 +48,7 @@
     "@tarojs/react": "3.2.8",
     "@tarojs/runtime": "3.2.8",
     "@tarojs/taro": "3.2.8",
+    "lwj-mobile-ui": "^0.0.9",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "taro-ui": "3.0.0-alpha.10"

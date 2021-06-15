@@ -1437,6 +1437,13 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@tarojs/api@3.2.12":
+  version "3.2.12"
+  resolved "https://registry.nlark.com/@tarojs/api/download/@tarojs/api-3.2.12.tgz#80b47d33688453abe94391a59f228cc3bdd3cb0a"
+  integrity sha1-gLR9M2iEU6vpQ5GlnyKMw73Tywo=
+  dependencies:
+    "@tarojs/runtime" "3.2.12"
+
 "@tarojs/api@3.2.8":
   version "3.2.8"
   resolved "https://registry.nlark.com/@tarojs/api/download/@tarojs/api-3.2.8.tgz?cache=0&sync_timestamp=1620984949451&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40tarojs%2Fapi%2Fdownload%2F%40tarojs%2Fapi-3.2.8.tgz#004cabcc3ba6097cddb55e34f2321c3db7d08fc9"
@@ -1471,6 +1478,21 @@
   dependencies:
     "@stencil/core" "2.4.0"
     "@tarojs/taro" "3.2.8"
+    better-scroll "^1.14.1"
+    classnames "^2.2.5"
+    intersection-observer "^0.7.0"
+    omit.js "^1.0.0"
+    resolve-pathname "^3.0.0"
+    swiper "4.4.2"
+    weui "^1.1.2"
+
+"@tarojs/components@^3.0.8":
+  version "3.2.12"
+  resolved "https://registry.nlark.com/@tarojs/components/download/@tarojs/components-3.2.12.tgz#a4133c67a056c99289754deecf78f72f87badfbc"
+  integrity sha1-pBM8Z6BWyZKJdU3uz3j3L4e637w=
+  dependencies:
+    "@stencil/core" "2.4.0"
+    "@tarojs/taro" "3.2.12"
     better-scroll "^1.14.1"
     classnames "^2.2.5"
     intersection-observer "^0.7.0"
@@ -1625,6 +1647,16 @@
     react-reconciler "0.25.1"
     scheduler "^0.17.0"
 
+"@tarojs/react@^3.0.8":
+  version "3.2.12"
+  resolved "https://registry.nlark.com/@tarojs/react/download/@tarojs/react-3.2.12.tgz#fada6e424c56e8dbd750dc91fb5a45ace48ba055"
+  integrity sha1-+tpuQkxW6NvXUNyR+1pFrOSLoFU=
+  dependencies:
+    "@tarojs/runtime" "3.2.12"
+    "@tarojs/shared" "3.2.12"
+    react-reconciler "0.25.1"
+    scheduler "^0.17.0"
+
 "@tarojs/router-rn@3.2.8":
   version "3.2.8"
   resolved "https://registry.nlark.com/@tarojs/router-rn/download/@tarojs/router-rn-3.2.8.tgz#d426ef260713b5cac55e079bd3b93661634fb997"
@@ -1640,6 +1672,17 @@
     react-native-gesture-handler "^1.8.0"
     react-native-safe-area-context "^3.1.8"
     react-native-screens "^2.11.0"
+
+"@tarojs/router@3.2.12":
+  version "3.2.12"
+  resolved "https://registry.nlark.com/@tarojs/router/download/@tarojs/router-3.2.12.tgz#63e4b916d225dbc7e22defa41463359da4d583fb"
+  integrity sha1-Y+S5FtIl28fiLe+kFGM1naTVg/s=
+  dependencies:
+    "@tarojs/runtime" "3.2.12"
+    history "^4.10.1"
+    query-string "^6.13.8"
+    universal-router "^8.3.0"
+    url-parse "^1.4.7"
 
 "@tarojs/router@3.2.8":
   version "3.2.8"
@@ -1668,6 +1711,14 @@
     "@tarojs/components-rn" "3.2.8"
     "@tarojs/router-rn" "3.2.8"
 
+"@tarojs/runtime@3.2.12":
+  version "3.2.12"
+  resolved "https://registry.nlark.com/@tarojs/runtime/download/@tarojs/runtime-3.2.12.tgz#f9673e3842af670bf3bd762db58cc797306697c1"
+  integrity sha1-+Wc+OEKvZwvzvXYttYzHlzBml8E=
+  dependencies:
+    "@tarojs/shared" "3.2.12"
+    lodash-es "4.17.15"
+
 "@tarojs/runtime@3.2.8":
   version "3.2.8"
   resolved "https://registry.nlark.com/@tarojs/runtime/download/@tarojs/runtime-3.2.8.tgz?cache=0&sync_timestamp=1620984974075&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40tarojs%2Fruntime%2Fdownload%2F%40tarojs%2Fruntime-3.2.8.tgz#fc6d377a17deebea0c7963a76fcc128af12133f6"
@@ -1690,10 +1741,29 @@
     resolve "1.15.1"
     tapable "1.1.3"
 
+"@tarojs/shared@3.2.12":
+  version "3.2.12"
+  resolved "https://registry.nlark.com/@tarojs/shared/download/@tarojs/shared-3.2.12.tgz#38330b71b0052ba849ad4cffc01353db54301e9c"
+  integrity sha1-ODMLcbAFK6hJrUz/wBNT21QwHpw=
+
 "@tarojs/shared@3.2.8":
   version "3.2.8"
   resolved "https://registry.nlark.com/@tarojs/shared/download/@tarojs/shared-3.2.8.tgz?cache=0&sync_timestamp=1620984947410&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40tarojs%2Fshared%2Fdownload%2F%40tarojs%2Fshared-3.2.8.tgz#9056d7819f19c4e973cb0f86e6c886ae795d94c1"
   integrity sha1-kFbXgZ8ZxOlzyw+G5siGrnldlME=
+
+"@tarojs/taro-h5@3.2.12":
+  version "3.2.12"
+  resolved "https://registry.nlark.com/@tarojs/taro-h5/download/@tarojs/taro-h5-3.2.12.tgz#141b30fb64bfd45929650f54b7f6a3a8de273b6e"
+  integrity sha1-FBsw+2S/1FkpZQ9Ut/ajqN4nO24=
+  dependencies:
+    "@tarojs/api" "3.2.12"
+    "@tarojs/router" "3.2.12"
+    "@tarojs/runtime" "3.2.12"
+    base64-js "^1.3.0"
+    jsonp-retry "^1.0.3"
+    mobile-detect "^1.4.2"
+    raf "^3.4.1"
+    whatwg-fetch "^3.4.0"
 
 "@tarojs/taro-h5@3.2.8":
   version "3.2.8"
@@ -1751,6 +1821,15 @@
     react-native-stylekit "^1.0.0"
     react-native-syan-image-picker "0.4.10"
     react-native-unimodules "^0.11.0"
+
+"@tarojs/taro@3.2.12":
+  version "3.2.12"
+  resolved "https://registry.nlark.com/@tarojs/taro/download/@tarojs/taro-3.2.12.tgz#f1e6307fe21372d9f01be96ad7e7aa86aefbbc61"
+  integrity sha1-8eYwf+ITctnwG+lq1+eqhq77vGE=
+  dependencies:
+    "@tarojs/api" "3.2.12"
+    "@tarojs/runtime" "3.2.12"
+    "@tarojs/taro-h5" "3.2.12"
 
 "@tarojs/taro@3.2.8":
   version "3.2.8"
@@ -3396,7 +3475,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5, classnames@^2.2.6:
+classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.3.1.tgz?cache=0&sync_timestamp=1617401788995&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fclassnames%2Fdownload%2Fclassnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha1-38+jiR4wbsHa0QXQ6I9EF7hTXo4=
@@ -7432,6 +7511,16 @@ lru-cache@^6.0.0:
   integrity sha1-bW/mVw69lqr5D8rR2vo7JWbbOpQ=
   dependencies:
     yallist "^4.0.0"
+
+lwj-mobile-ui@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.nlark.com/lwj-mobile-ui/download/lwj-mobile-ui-0.0.9.tgz#30b906c9b21d95b6868183048f36668afb0eeba3"
+  integrity sha1-MLkGybIdlbaGgYMEjzZmivsO66M=
+  dependencies:
+    "@tarojs/components" "^3.0.8"
+    "@tarojs/react" "^3.0.8"
+    classnames "^2.3.1"
+    taro-ui "3.0.0-alpha.10"
 
 magic-string@^0.25.2, magic-string@^0.25.7:
   version "0.25.7"
