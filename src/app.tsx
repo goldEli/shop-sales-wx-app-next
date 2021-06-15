@@ -1,11 +1,23 @@
 import React from "react";
 import { View } from "@tarojs/components";
 import "./app.scss";
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from "react-query";
 
+const queryClient = new QueryClient();
 interface IAppProps {}
 
 const App: React.FC<IAppProps> = (props) => {
-  return <>{props.children}</>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      {props.children}
+    </QueryClientProvider>
+  );
 };
 
 // export default App
