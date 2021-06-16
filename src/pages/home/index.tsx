@@ -13,11 +13,18 @@ const Home: React.FC<IHomeProps> = (props) => {
   const { pageConfig, pointData } = useHomePageInfo();
   console.log({ pageConfig, pointData });
   return (
-    <View>
+    <View
+      style={{
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: pageConfig?.bgColor || "",
+        backgroundImage: pageConfig?.bgImg[0]?.url || "",
+      }}
+    >
       {/* <AtButton type="primary">this 123 home page</AtButton>
       <Title text="title" />
       <TitleText /> */}
-      {pointData.map((item) => {
+      {pointData?.map((item) => {
         return (
           <ListItem
             height={item.point.h}

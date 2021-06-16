@@ -67,7 +67,7 @@ export function useHomePageInfo() {
 
   const html_param =
     d?.content_info?.find((item) => item.client === "wap")?.html_param || "{}";
-  const { pageConfig={}, pointData=[] } = (JSON.parse(html_param) ||
+  const { pageConfig, pointData } = (JSON.parse(html_param) ||
     {}) as IHtmlParam;
 
   return {

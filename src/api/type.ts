@@ -30,8 +30,8 @@ export interface IHomePageInfo {
 }
 
 export interface IHtmlParam {
-  pointData: IPointDataItem[];
-  pageConfig: IPageConfig;
+  pointData?: IPointDataItem[];
+  pageConfig?: IPageConfig;
 }
 
 export type TPointDataItemType =
@@ -80,7 +80,7 @@ export interface IPageConfig {
   template: "standard" | "simple";
   online_consult: number;
   sub_status: number;
-  bgColor: number;
+  bgColor: string;
   bgImg: IBgImg[];
   modalAdsBgImg: IBgImg[];
   modalAdsBgColor: string;
