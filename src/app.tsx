@@ -9,7 +9,12 @@ import {
   QueryClientProvider,
 } from "react-query";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    // 失败后重试
+    queries: { retry: 0 },
+  },
+});
 interface IAppProps {}
 
 const App: React.FC<IAppProps> = (props) => {

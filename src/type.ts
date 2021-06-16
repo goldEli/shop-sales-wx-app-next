@@ -1,4 +1,4 @@
-export interface IResponce<T> {
+export interface IResponse<T> {
   code: number;
   message: string;
   result: T;
