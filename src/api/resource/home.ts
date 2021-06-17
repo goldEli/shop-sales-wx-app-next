@@ -1,12 +1,12 @@
 import { useQuery } from "react-query";
 // import { TResponce1 } from 'src/type';
-import { API_SPECIAL } from "../config";
+import { APIS } from "../config";
 import _ from "lodash";
 import { req } from "src/utils/req";
 import { IHomePageInfo, IHtmlParam } from "../type";
 import { IResponse } from "src/type";
 
-const HOME_PAGE_INFO = `${API_SPECIAL}/store/ordinary`;
+const { HOME_PAGE_INFO } = APIS;
 
 async function getHomePageInfo() {
   // if (!tenantSiteKey) {
@@ -16,7 +16,7 @@ async function getHomePageInfo() {
     url: HOME_PAGE_INFO,
     method: "GET",
     // dev-test
-    testDomain: "http://local.liweijia.com:8000"
+    testDomain: "http://local.liweijia.com:8000",
     // header: { "Site-Key": tenantSiteKey },
   });
 }
