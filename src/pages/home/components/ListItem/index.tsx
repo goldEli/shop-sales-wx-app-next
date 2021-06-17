@@ -4,7 +4,7 @@ import {
   BlankComponents,
   TitleText,
   PhotoAds,
-  StoreInfo,
+  // StoreInfo,
   GraphicNavigation,
   CategoryNavigation,
   GoldCoinPurchase,
@@ -13,6 +13,7 @@ import {
   ProductRecommendation,
 } from "lwj-mobile-ui";
 import "lwj-mobile-ui/dist/index.css";
+import StoreInfo from "../StoreInfo";
 
 interface IListItemProps {
   type: TPointDataItemType;
