@@ -99,3 +99,26 @@ export interface ITenantInfo {
   tenantSiteKey: string;
   wxAppLogo: string;
 }
+
+export interface IDistributorDetail {
+  address: string;
+  cityName: null | string;
+  code: string;
+  displayName: string;
+  distributorMapAddress: string;
+  districtName: null | string;
+  headPic: string;
+  invitationCode: string;
+  latitude: string;
+  longitude: string;
+  memo: null | string;
+  mobile: string;
+  name: string;
+  provinceName: null | string;
+  salesDistributorType: string;
+  salesUserId: string;
+  shopSiteKey: string;
+  showAddress: boolean;
+  tenantSiteKey: string;
+  userName: string;
+}
